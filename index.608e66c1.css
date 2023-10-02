@@ -1,0 +1,2 @@
+body{background-color:#15674e}.loader{width:48px;height:48px;box-sizing:border-box;border:5px dotted #fff;border-radius:50%;animation:rotation 2s linear infinite;display:inline-block;position:relative;top:50px;left:50px}@keyframes rotation{0%{transform:rotate(0deg)}to{transform:rotate(360deg)}}.loader-visibility,.breed-select-visibility{display:none}
+/*# sourceMappingURL=index.608e66c1.css.map */

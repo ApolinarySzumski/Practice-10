@@ -14,9 +14,9 @@ const catInfo = document.querySelector('.cat-info');
 
 // Functions
 
-const fillBreedSelect = breeds => {
-  const markup = breeds
-    .map(breed => `<option value="${breed.id}">${breed.name}</option>`)
+const fillBreedSelect = array => {
+  const markup = array
+    .map(array => `<option value="${array.id}">${array.name}</option>`)
     .join('');
   breedSelect.innerHTML = markup;
 };
@@ -33,13 +33,10 @@ const fillCatInfo = array => {
   catInfo.innerHTML = markup;
 };
 
-const toggleLoader = () => {
-  loader.classList.toggle('loader-visibility');
-};
+const toggleLoader = () => loader.classList.toggle('loader-visibility');
 
-const toggleBreedSelectVisibility = () => {
+const toggleBreedSelectVisibility = () =>
   breedSelect.classList.toggle('breed-select-visibility');
-};
 
 const errorNotiflix = error => Notiflix.Notify.failure(error);
 
